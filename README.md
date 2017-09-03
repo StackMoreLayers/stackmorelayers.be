@@ -1,7 +1,8 @@
 # stackmorelayers.be
 
-This repo holds the source for http://stackmorelayers.be
-Right now, it is a static website deployed manualy
+This repo holds the source for <http://stackmorelayers.be>.
+
+Right now, it is a static website deployed manualy.
 
 # License
 
