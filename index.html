@@ -1,53 +1,69 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
         <meta charset="UTF-8">
-        <title>Stack More Layers AI Club</title>
-        <link rel="icon" href="favicon.png">
-        <style type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
+        <title>Stack More Layers AI Club</title>
+
+        <link rel="icon" href="favicon.png">
+
+        <style type="text/css">
         body {
             background-color: white;
             font-family: 'Montserrat', sans-serif;
+            padding:0;
+            margin: auto;
         }
-
-        header {
-            height: 60vh;
-            background: url(bg.jpg) no-repeat center center;
-            -webkit-background-size: contain;
-            -moz-background-size: contain;
-            -o-background-size: contain;
-            background-size: contain;
+        header img{
+          height : 50vh;
+          width : auto;
         }
-
-        content {
-            text-align: center;
-        }
-
         h1{
             font-size: 10vmin;
             font-family: 'Montserrat', sans-serif;
         }
-
         h1 small {
             font-size: 3vmin;
         }
-
+        main{
+          margin: auto;
+          text-align: center;
+        }
+        span.linebreak::after{
+          content: ' - ';
+        }
+        @media (max-width:768px){
+          span.linebreak::after{
+            content: '';
+          }
+          span.linebreak{
+            display:block;
+          }
+        }
         </style>
     </head>
+
     <body>
-        <header></header>
-        <content>
-            <h1>Stack More Layers !<br><small>An AI club in Brussels, BE</small></h1>
-            <p>
-            IRC: <a href="http://webchat.freenode.net/?nick=IWantMoreLayers&channels=%23stackmorelayers">#stackmorelayers (freenode.org)</a> -
-                GitHub: <a href="https://github.com/StackMoreLayers">@StackMoreLayers</a> -
-                Mailing-list: <a href="https://groups.google.com/forum/#!forum/stackmorelayers">stackmorelayers@googlegroups.com</a>
-            </p>
-            <p>
-                Next meeting: Tuesday 10/10/2017 - 
-                <i>Reach us on IRC or GitHub to know where</i>
-            </p>
-        </content>
+      <main>
+        <header>
+          <img src="bg.jpg" alt="Stack more layers">
+        </header>
+
+        <section>
+        <h1>Stack More Layers !<br><small>An AI club in Brussels, BE</small></h1>
+
+        <p>
+          <span class="linebreak">IRC: <a href="http://webchat.freenode.net/?nick=IWantMoreLayers&channels=%23stackmorelayers">#stackmorelayers (freenode.org)</a></span>
+          <span class="linebreak">GitHub: <a href="https://github.com/StackMoreLayers">@StackMoreLayers</a></span>
+          Mailing-list: <a href="https://groups.google.com/forum/#!forum/stackmorelayers">stackmorelayers@googlegroups.com</a>
+        </p>
+        <p>
+            <span class="linebreak">Next meeting: Tuesday 10/10/2017</span>
+            <em>Reach us on IRC or GitHub to know where</em>
+        </p>
+        </section>
+      </main>
     </body>
 </html>
