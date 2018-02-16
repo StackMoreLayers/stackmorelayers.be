@@ -60,10 +60,19 @@
           Mailing-list: <a href="https://groups.google.com/forum/#!forum/stackmorelayers">stackmorelayers@googlegroups.com</a>
         </p>
         <p>
-            <span class="linebreak">Next meeting: Tuesday 10/10/2017</span>
+            <span class="linebreak">Next meeting: <span id="__when"></span> <span id="__where"></span></span>
             <em>Reach us on IRC or GitHub to know where</em>
         </p>
         </section>
       </main>
+
+      <script type="text/javascript">
+      fetch('http://bonjourinternet.top/stackbot/cal.json')
+      .then(res => res.json())
+      .then(res => {
+        document.getElementById('__where').innerHTML = (res.v != 'undefined') ? '@' + res.v : '(nowhere decided)'
+        document.getElementById('__when').innerHTML = new Date(res.t).toISOString()
+      })
+      </script>
     </body>
 </html>
